@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Raut | Data Analytics & AI Specialist Portfolio</title>
+  <meta name="description" content="Portfolio of Saurabh Mahavir Raut, B.Tech student in Electronics and Computer Engineering. Specializing in Data Analytics, Interactive Dashboards, Machine Learning, NLP, and Computer Vision.">
+  <meta name="keywords" content="Saurabh Raut, Data Analytics, Python, Tableau, Streamlit, Machine Learning, DistilBERT, OpenCV, Solapur">
+  <meta name="author" content="Saurabh Raut">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2318181B'/><text x='50%' y='62%' font-family='sans-serif' font-weight='800' font-size='48' fill='%23F97316' text-anchor='middle'>SR</text></svg>">
+
+  <!-- Google Fonts: Sora (Headings) & Manrope (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Background Glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header>
+    <div class="wrap">
+      <nav aria-label="Main Navigation">
+        <a class="logo" href="#top" aria-label="Saurabh Raut Homepage">
+          <div class="logo-icon">SR</div>
+          <span>Saurabh Raut<span class="logo-dot">.</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a class="btn btn-primary btn-sm" href="Saurabh_Raut_Resume.pdf" download="Saurabh_Raut_Resume.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Resume</span>
+          </a>
+        </div>
+
+        <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#projects">Featured Projects</a></li>
+        <li><a href="#experience">Experience & Internships</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-actions">
+        <a class="btn btn-primary" href="Saurabh_Raut_Resume.pdf" download="Saurabh_Raut_Resume.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Resume (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <h1>
+            Hi, I'm <span class="hero-name">Saurabh Raut</span>.<br>
+            Data Analytics &amp; AI Specialist.
+          </h1>
+
+          <p class="hero-subtitle">
+            B.Tech in Electronics &amp; Computer Engineering | CGPA 9.31
+          </p>
+
+          <p class="hero-bio">
+            I turn complex, raw data into interactive executive dashboards and develop applied Machine Learning, NLP, and Computer Vision systems that drive informed business decisions.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">
+              <span>View My Projects</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a class="btn btn-outline" href="Saurabh_Raut_Resume.pdf" download="Saurabh_Raut_Resume.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-meta">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Solapur, Maharashtra, India</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>3 Completed Internships</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Walchand Institute of Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Card -->
+        <div class="hero-card" role="region" aria-label="Analytics & Engineering Competencies">
+          <div class="card-top-bar">
+            <div class="card-title-group">
+              <span class="pill-tag">Proficiency</span>
+              <h3>Analytics &amp; Tech Stack</h3>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+
+          <div class="skill-bars-widget">
+            <div class="skill-bar-row">
+              <div class="skill-bar-header">
+                <span class="skill-name">Python &amp; Data Analysis</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-row">
+              <div class="skill-bar-header">
+                <span class="skill-name">SQL &amp; Relational Queries</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-row">
+              <div class="skill-bar-header">
+                <span class="skill-name">Tableau &amp; Business Intelligence</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-row">
+              <div class="skill-bar-header">
+                <span class="skill-name">Streamlit &amp; Interactive Apps</span>
+                <span class="skill-pct">84%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-row">
+              <div class="skill-bar-header">
+                <span class="skill-name">Machine Learning &amp; DistilBERT / NLP</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats-grid">
+            <div class="stat-box">
+              <span class="stat-val">9.31</span>
+              <span class="stat-label">CGPA / 10</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-val">3</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-val">6+</span>
+              <span class="stat-label">Live Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About & Education Section
+         ========================================================================== -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">About Me</span>
+          <h2>Transforming Data into <span class="gradient-text">Decisive Impact</span></h2>
+          <p>
+            Bridging electronic systems engineering with modern data analytics and enterprise machine learning.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Portrait Card -->
+          <div class="about-profile-card">
+            <div class="profile-img-frame">
+              <img src="saurabh.jpg" alt="Saurabh Mahavir Raut" class="profile-img">
+              <div class="profile-floating-badge">
+                <span class="status-dot"></span>
+                <span>Open to Roles</span>
+              </div>
+            </div>
+            <div class="profile-card-details">
+              <h3>Saurabh Mahavir Raut</h3>
+              <p class="profile-card-role">Electronics &amp; Computer Engineering (B.Tech)</p>
+              <div class="profile-card-chips">
+                <span class="chip">Solapur, Maharashtra</span>
+                <span class="chip highlight">CGPA: 9.31 / 10</span>
+                <span class="chip">3 Internships</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative Column -->
+          <div class="about-narrative">
+            <p>
+              I am a pre-final year B.Tech student in Electronics and Computer Engineering at Walchand Institute of Technology, Solapur, maintaining a strong academic record with a <strong>9.31 / 10 CGPA (79.04%)</strong>.
+            </p>
+            <p>
+              My journey centers around the full data lifecycle: from exploratory data analysis (EDA), data cleaning, and statistical modeling to engineering interactive dashboards and production-grade ML APIs with FastAPI, Streamlit, and Tableau.
+            </p>
+            <p>
+              Through real-world internships with <strong>IBM SkillsBuild</strong>, <strong>Infosys Springboard 6.0</strong>, and <strong>1M1B Green Skills</strong>, I have tackled end-to-end problems in supermarket retail analytics, enterprise email NLP classification, and carbon footprint reduction monitoring.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-pill">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <div>
+                  <h4>Data Analytics &amp; EDA</h4>
+                  <p>In-depth exploratory analysis, KPI formulation, and data storytelling.</p>
+                </div>
+              </div>
+
+              <div class="feature-pill">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                </div>
+                <div>
+                  <h4>NLP &amp; Applied AI</h4>
+                  <p>Fine-tuned DistilBERT models, Transformers, and OpenCV vision pipelines.</p>
+                </div>
+              </div>
+
+              <div class="feature-pill">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
+                <div>
+                  <h4>BI &amp; Dashboards</h4>
+                  <p>Tableau Public dashboards, Streamlit interactive web apps, and Power BI.</p>
+                </div>
+              </div>
+
+              <div class="feature-pill">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                </div>
+                <div>
+                  <h4>IoT &amp; Hardware</h4>
+                  <p>ESP32 firmware, MQTT telemetry, Node-RED dashboards, and Wokwi simulation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Background Section -->
+        <div class="about-education-section">
+          <h3 class="edu-section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <span>Academic Qualifications</span>
+          </h3>
+          <div class="education-grid">
+            <div class="edu-card">
+              <span class="edu-period">2023 – Present</span>
+              <h3>B.Tech, Electronics &amp; Computer Engineering</h3>
+              <p class="edu-institute">Walchand Institute of Technology, Solapur, Maharashtra</p>
+              <div class="edu-grade">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>CGPA: <strong>9.31 / 10</strong> (79.04%, Semesters I–VI)</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <span class="edu-period">2022 – 2023</span>
+              <h3>Higher Secondary Certificate (HSC – Class XII)</h3>
+              <p class="edu-institute">Bharat Junior College, Risod, Maharashtra</p>
+              <div class="edu-grade">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Score: <strong>79%</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Technical Skills Section
+         ========================================================================== -->
+    <section id="skills" style="background: var(--charcoal-deep);">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">Capabilities</span>
+          <h2>Technical <span class="gradient-text">Skills &amp; Toolset</span></h2>
+          <p>Carefully curated analytical and engineering technologies applied across real projects.</p>
+        </div>
+
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-skill-filter="all">All Skills</button>
+          <button class="filter-btn" data-skill-filter="analytics">Data Analytics &amp; Viz</button>
+          <button class="filter-btn" data-skill-filter="ai">Machine Learning &amp; AI</button>
+          <button class="filter-btn" data-skill-filter="frameworks">Web &amp; APIs</button>
+          <button class="filter-btn" data-skill-filter="cloud">Cloud &amp; DevOps</button>
+        </div>
+
+        <div class="skills-matrix">
+          <!-- Category 1: Programming & Data Analytics -->
+          <div class="skill-category-card" data-skill-cat="analytics">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3>Data Analytics &amp; Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip featured">Python (Pandas, NumPy)</span>
+              <span class="skill-chip featured">SQL (Queries &amp; Joins)</span>
+              <span class="skill-chip">Exploratory Data Analysis (EDA)</span>
+              <span class="skill-chip">Data Cleaning &amp; Preprocessing</span>
+              <span class="skill-chip">Statistical Analysis</span>
+              <span class="skill-chip">KPI Formulation</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Data Visualization -->
+          <div class="skill-category-card" data-skill-cat="analytics">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+              </div>
+              <h3>Data Visualization &amp; BI</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip featured">Tableau Public</span>
+              <span class="skill-chip featured">Streamlit Web Apps</span>
+              <span class="skill-chip">Power BI</span>
+              <span class="skill-chip">Plotly &amp; Seaborn</span>
+              <span class="skill-chip">Matplotlib</span>
+              <span class="skill-chip">Interactive Filters &amp; Maps</span>
+            </div>
+          </div>
+
+          <!-- Category 3: ML & AI -->
+          <div class="skill-category-card" data-skill-cat="ai">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path><path d="M12 6v6l4 2"></path></svg>
+              </div>
+              <h3>Machine Learning &amp; NLP</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip featured">Scikit-learn</span>
+              <span class="skill-chip featured">DistilBERT &amp; Transformers</span>
+              <span class="skill-chip">OpenCV Computer Vision</span>
+              <span class="skill-chip">NLP Text Classification</span>
+              <span class="skill-chip">F1-Score &amp; Model Evaluation</span>
+              <span class="skill-chip">Confusion Matrix Analysis</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Web Frameworks & APIs -->
+          <div class="skill-category-card" data-skill-cat="frameworks">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Frameworks &amp; Web</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip featured">FastAPI</span>
+              <span class="skill-chip">Flask</span>
+              <span class="skill-chip">RESTful API Design</span>
+              <span class="skill-chip">HTML5 &amp; Modern CSS3</span>
+              <span class="skill-chip">Vanilla JavaScript</span>
+              <span class="skill-chip">React / Vite Integration</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Cloud & Tools -->
+          <div class="skill-category-card" data-skill-cat="cloud">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <h3>Cloud &amp; Development Tools</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip featured">AWS Cloud Foundations</span>
+              <span class="skill-chip featured">Git &amp; GitHub</span>
+              <span class="skill-chip">Render Cloud</span>
+              <span class="skill-chip">Hugging Face Spaces</span>
+              <span class="skill-chip">Vercel Deployment</span>
+              <span class="skill-chip">VS Code &amp; Google Colab</span>
+            </div>
+          </div>
+
+          <!-- Category 6: IoT & Hardware -->
+          <div class="skill-category-card" data-skill-cat="ai">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <h3>Embedded &amp; IoT Systems</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip featured">ESP32 Microcontroller</span>
+              <span class="skill-chip featured">MQTT Protocol (HiveMQ)</span>
+              <span class="skill-chip">Node-RED Dashboards</span>
+              <span class="skill-chip">Wokwi Hardware Simulation</span>
+              <span class="skill-chip">WS2812 Addressable LEDs</span>
+              <span class="skill-chip">Embedded C++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Featured Projects Section
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">Portfolio</span>
+          <h2>Featured <span class="gradient-text">Projects &amp; Deployments</span></h2>
+          <p>
+            Explore live deployments, interactive BI dashboards, computer vision models, and source repositories.
+          </p>
+        </div>
+
+        <div class="project-controls">
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+            <button class="filter-btn" data-filter="analytics">Data Analytics &amp; Viz</button>
+            <button class="filter-btn" data-filter="ai">Machine Learning &amp; AI</button>
+            <button class="filter-btn" data-filter="iot">IoT &amp; Hardware</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid populated by script.js -->
+        <div class="project-grid" id="project-grid">
+          <!-- Fallback content if JavaScript is disabled -->
+          <article class="project-card">
+            <div class="card-header-meta">
+              <span class="project-badge">IBM SkillsBuild</span>
+              <span class="project-index">PROJ_01</span>
+            </div>
+            <h3>Supermarket Sales Analytics Dashboard</h3>
+            <p class="description">Interactive Streamlit dashboard exploring supermarket sales data and visualizing business performance with branch revenue KPIs.</p>
+            <div class="project-tools">
+              <span class="tool-tag">Python</span><span class="tool-tag">Streamlit</span><span class="tool-tag">EDA</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary btn-sm" href="https://supermarket-sales-analytics-hq5hhidaobpoagh5r2byrf.streamlit.app/" target="_blank" rel="noopener">Live Streamlit App</a>
+              <a class="btn btn-outline btn-sm" href="https://github.com/Saurabhraut24/supermarket-sales-analytics" target="_blank" rel="noopener">GitHub Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Experience & Certifications Section
+         ========================================================================== -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">Career Journey</span>
+          <h2>Internships &amp; <span class="gradient-text">Experience</span></h2>
+          <p>Proven track record solving analytical challenges across enterprise and research environments.</p>
+        </div>
+
+        <div class="experience-layout">
+          <!-- Timeline Column -->
+          <div class="timeline">
+            <!-- Item 1: IBM SkillsBuild -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-meta">
+                  <span class="timeline-period">2026</span>
+                  <span class="timeline-org">IBM SkillsBuild | BharatCares</span>
+                </div>
+                <h3>Data Analytics Intern</h3>
+                <p>
+                  Applied core data analytics concepts to an extensive retail supermarket sales dataset. Cleaned and structured transactional records, performed exploratory data analysis (EDA), and engineered a multi-page interactive Streamlit dashboard to visualize branch revenue trends, gross margins, and customer satisfaction metrics.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2: Infosys Springboard -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-meta">
+                  <span class="timeline-period">Nov 2025 – Jan 2026</span>
+                  <span class="timeline-org">Infosys Springboard 6.0</span>
+                </div>
+                <h3>Enterprise AI Project Intern</h3>
+                <p>
+                  Engineered an AI-powered email classification and urgency triage system using Natural Language Processing and fine-tuned DistilBERT models. Performed rigorous model evaluation using F1-score and confusion matrices, and connected the inference pipeline to high-performance FastAPI backend endpoints.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3: 1M1B Green Skills -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-meta">
+                  <span class="timeline-period">Sep 2025 – Oct 2025</span>
+                  <span class="timeline-org">1M1B Green Skills</span>
+                </div>
+                <h3>Data Analytics Intern</h3>
+                <p>
+                  Completed 20 intensive hours of Tableau business intelligence training. Analyzed sustainability datasets and built an interactive public dashboard with KPI cards and participant rankings to measure CO2 footprint reductions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="certifications-col" id="certifications">
+            <h3 class="subhead">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <span>Verified Certifications</span>
+            </h3>
+
+            <div class="cert-cards-list">
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                </div>
+                <div class="cert-info">
+                  <h4>AWS Academy Graduate: Cloud Foundations</h4>
+                  <div class="cert-issuer">AWS Academy</div>
+                  <div class="cert-date">Completed: September 2025</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <div class="cert-info">
+                  <h4>NPTEL Elite: Introduction to Industry 4.0 and Industrial IoT</h4>
+                  <div class="cert-issuer">NPTEL / IIT Kharagpur</div>
+                  <div class="cert-date">Completed: Jan – Apr 2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Resume Download Banner Section
+         ========================================================================== -->
+    <section class="resume-banner-section" id="resume">
+      <div class="wrap">
+        <div class="resume-card">
+          <div class="resume-content">
+            <h2>Ready to see the <span class="gradient-text">Complete Profile?</span></h2>
+            <p>
+              Download my official one-page resume containing complete educational background, internship impact, project details, and technical stack.
+            </p>
+          </div>
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="Saurabh_Raut_Resume.pdf" download="Saurabh_Raut_Resume.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume (PDF)</span>
+            </a>
+            <a class="btn btn-outline" href="Saurabh_Raut_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>View in Browser</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section
+         ========================================================================== -->
+    <section id="contact" style="background: var(--charcoal-deep);">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Let's Start a <span class="gradient-text">Conversation</span></h2>
+          <p>
+            Whether you have an internship opportunity, an entry-level data role, or an applied project collaboration in mind, I'd love to connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels List -->
+          <div class="contact-info-panel">
+            <h3>Contact Channels</h3>
+
+            <!-- Email -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-group">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="label">Email Address</span>
+                  <a class="value" href="mailto:saurabhraut24505@gmail.com">saurabhraut24505@gmail.com</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="saurabhraut24505@gmail.com" type="button" aria-label="Copy Email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-group">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="label">Phone / WhatsApp</span>
+                  <a class="value" href="tel:+918408009108">+91 8408009108</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="+918408009108" type="button" aria-label="Copy Phone">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-group">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="label">LinkedIn Profile</span>
+                  <a class="value" href="https://www.linkedin.com/in/saurabh-raut-255804307/" target="_blank" rel="noopener noreferrer">linkedin.com/in/saurabh-raut</a>
+                </div>
+              </div>
+              <a class="copy-btn" href="https://www.linkedin.com/in/saurabh-raut-255804307/" target="_blank" rel="noopener noreferrer">
+                <span>Visit</span>
+              </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-group">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="label">GitHub Portfolio</span>
+                  <a class="value" href="https://github.com/Saurabhraut24" target="_blank" rel="noopener noreferrer">github.com/Saurabhraut24</a>
+                </div>
+              </div>
+              <a class="copy-btn" href="https://github.com/Saurabhraut24" target="_blank" rel="noopener noreferrer">
+                <span>Visit</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="form-group">
+                <label for="form-name">Your Full Name *</label>
+                <input class="form-input" id="form-name" name="name" type="text" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email Address *</label>
+                <input class="form-input" id="form-email" name="email" type="email" placeholder="e.g. rahul@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input class="form-input" id="form-subject" name="subject" type="text" placeholder="e.g. Data Analytics Internship Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message *</label>
+                <textarea class="form-textarea" id="form-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <div class="form-status" id="form-status" role="alert"></div>
+
+              <button class="btn btn-primary" type="submit" style="width: 100%;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">SR</div>
+            <span>Saurabh Raut<span class="logo-dot">.</span></span>
+          </div>
+          <p>Electronics &amp; Computer Engineering (B.Tech) | Data Analytics &amp; Applied AI</p>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Saurabh Raut. All rights reserved. Designed with precision &amp; performance.</div>
+        <button class="back-to-top" id="back-to-top" type="button" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
